@@ -11,22 +11,25 @@
 html,
 body {
     background-color: rgb(250,250,250); 
-}
-
-header, 
-section {
-    text-align: center;
+    color: #555;
 }
 
 header {
     padding-top: 1em;
-    
 }
 
-.wrap {
-    width: 95%;
-    max-width: 1050px; 
-    margin: 0 auto;
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+a {
+     display: inline-block;
+     text-decoration: none;
+     color: #666; 
+     font-weight: bold;
 }
 
 /***** Navigation *****/  
@@ -36,18 +39,98 @@ header {
 }
 
 
-.main-nav {
+.main-nav,
+.footer-nav {
     list-style-type: none; 
     padding-left: 0; 
 }
 
 .main-nav li,
 .main-nav a {
-     display: block;
+     width: 100%;
+     text-transform: uppercase;
 }
 
 .main-nav li {
         background-color: #fff;
         margin-bottom: .35em;
         padding: 1em;
+}
+
+/***** Layout *****/ 
+
+header, 
+section,
+.contact {
+    text-align: center;
+}
+
+section,
+.contact {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.wrap {
+    width: 90%;
+    max-width: 1050px; 
+    margin: 0 auto;
+}
+
+
+.student-info img {
+    width: 75%;
+}
+
+.student-info p,
+.contact p {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #777;
+}
+
+.portfolio {
+    background: #fff; 
+}
+
+.panel {
+    padding-bottom: 1em;
+}
+
+.panel img {
+    width: 100%;
+}
+
+.contact p {
+    margin-bottom: 2em;
+}
+
+.contact span {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.contact a {
+    margin-left: 10px;
+}
+
+.contact {
+    border-bottom: 1px solid #ddd;
+}
+
+.footer-name,
+#mobile-btt-link {
+    width: 49%;
+}
+
+.footer-name {
+    display: inline-block;
+}
+
+#mobile-btt-link {
+    text-align: right;
+}
+
+.footer-nav {
+    display: none;
 }
